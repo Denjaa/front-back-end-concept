@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Prototype built for interview</title>
+	<link rel = "stylesheet" type = "text/css" href = "{{ url_for('static',filename = 'style.css') }}">
+	<script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+
+<body>
+	
+	<div class = 'mainBody'>
+	
+		<div class = 'top'>
+			<div class = 'logo'>
+				<a href="/"><img src = '/static/images/dnb.gif' alt='' style="width:250px;height:60px;" /></a>
+			</div>
+			<p>DECISION TREE AND DATA VIZUALIZATION PROTOTYPE </p>
+		</div>
+
+		<div class = 'mainBox'>
+			{% block content %}
+			{% endblock %}
+		</div>
+		
+		<div class = 'bottom'>
+			<p> 2019 © by Denis Morozov </p>
+		</div>
+	</div>
+	
+</body>

@@ -1,0 +1,32 @@
+{% extends 'main_body.html' %}
+
+{% block content %}
+
+
+<div class="split left">
+  <div class="left-center">
+		
+		<h1> PREDICTION IS: FEMALE </h1>
+		<br><br><br>
+		<img src = '/static/images/female.jpg' alt='' style="width:250;height:250px;" />
+	
+  </div>
+</div>
+
+<div class="split right">
+  <div class="right-center">
+	<br>
+	<h1> VIZUALIZE DATA: </h1>
+	<br><br>
+	<div class="FormBox">
+		<form method = 'POST' enctype='multipart/form-data'>
+			<input class='inpt' type="file" name="userFile" accept="csv" multiple>
+			<br><br>
+			<input type = 'submit' value = 'Activate Process' class = 'right-upload-button'>
+		</form>
+	</div>
+  </div>
+</div>
+
+
+{% endblock %}

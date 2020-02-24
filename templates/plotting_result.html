@@ -1,0 +1,48 @@
+{% extends 'main_body.html' %}
+
+{% block content %}
+
+
+<div class="split left">
+  <div class="left-center">
+		<br>
+		<h1> ENTER DATA: </h1>
+		<br><br>
+		
+		<form method='POST' type="text">
+			<div class="group">      
+			  <input type="text", name="userInput[]">
+			  <span class="highlight"></span>
+			  <span class="bar"></span>
+			  <label>HEIGHT</label>
+			</div>
+			
+			<div class="group">      
+			  <input type="text", name="userInput[]">
+			  <span class="highlight"></span>
+			  <span class="bar"></span>
+			  <label>WEIGHT</label>
+			</div>
+			
+			<div class="group">      
+			  <input type="text", name="userInput[]">
+			  <span class="highlight"></span>
+			  <span class="bar"></span>
+			  <label>SHOE SIZE</label>
+			</div>
+			<br>
+			<input type = 'submit' value = 'SUBMIT' class = 'left-submit-button'>
+		</form>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="plot-right-center">
+	<br>
+	<h1>YOUR DATA IS PLOTTED BELOW: </h1>
+	<br>
+	<img src = '/static/images/plot_result.jpg' alt='' style="width:400;height:400px;" />
+  </div>
+</div>
+
+{% endblock %}

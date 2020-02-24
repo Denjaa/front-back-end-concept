@@ -1,0 +1,54 @@
+{% extends 'main_body.html' %}
+
+{% block content %}
+
+
+<div class="split left">
+  <div class="left-center">
+		<br>
+		<h1> ENTER DATA: </h1>
+		<br><br>
+		
+		<form method='POST' type="text">
+			<div class="group">      
+			  <input type="text", name="userInput[]">
+			  <span class="highlight"></span>
+			  <span class="bar"></span>
+			  <label>HEIGHT</label>
+			</div>
+			
+			<div class="group">      
+			  <input type="text", name="userInput[]">
+			  <span class="highlight"></span>
+			  <span class="bar"></span>
+			  <label>WEIGHT</label>
+			</div>
+			
+			<div class="group">      
+			  <input type="text", name="userInput[]">
+			  <span class="highlight"></span>
+			  <span class="bar"></span>
+			  <label>SHOE SIZE</label>
+			</div>
+			<br>
+			<input type = 'submit' value = 'SUBMIT' class = 'left-submit-button'>
+		</form>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="right-center">
+	<br>
+	<h1> VIZUALIZE DATA: </h1>
+	<br><br>
+	<div class="FormBox">
+		<form method = 'POST' enctype='multipart/form-data'>
+			<input class='inpt' type="file" name="userFile" accept="csv" multiple>
+			<br><br>
+			<input type = 'submit' value = 'Activate Process' class = 'right-upload-button'>
+		</form>
+	</div>
+  </div>
+</div>
+
+{% endblock %}
